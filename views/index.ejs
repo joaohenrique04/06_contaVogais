@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <title>Contador de vogais</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+        html {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body onload="limparVogais()">
+    <h1>Contador de vogais</h1>
+    <form action="/" method="post">
+        <label for="texto">Insira o texto base:</label>
+        <input type="text" id="texto" name="texto" />
+        <button type="submit">Contar vogais</button>
+    </form>
+    <% if (vogais != undefined) { %>
+        <p id="vogais">O texto inserido possui <%= vogais %> vogais.</p>
+    <% } %>
+</body>
+</html>
